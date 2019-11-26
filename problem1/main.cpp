@@ -33,11 +33,11 @@ int main (int argc, char **argv) {
         
         std::string word = tokens[column_number];
         if (frequencies.find(word) != frequencies.end()) {
-	        frequencies[word]++;
-	    }
-	    else {
-	        frequencies[word] = 1;
-	    }
+		frequencies[word]++;
+	}
+	else {
+		frequencies[word] = 1;
+	}
     }
 
 	std::set<std::pair<int, std::string>> sorted_frequencies;
