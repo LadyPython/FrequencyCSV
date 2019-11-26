@@ -7,6 +7,12 @@
 #include <utility>
 #include <cassert>
 
+// Program should take the following params using argc/argv:
+// 1. csv file (blank line at the end is needed)
+// 2. column index (0-based)
+// Program should output in stdout the frequencies of the values used in the column sorted by frequencies by descending order.
+// So the most frequent term goes in the beginning
+
 int main (int argc, char **argv) {
     assert(("There is no input_csv", argc > 1));
     std::ifstream fin(argv[1]);
